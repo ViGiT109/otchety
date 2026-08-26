@@ -1,0 +1,1643 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>SEO-аудит gorakailas.ru — август 2026</title>
+</head>
+<body>
+<style>
+:root{
+  --bg:#ffffff; --fg:#16191d; --muted:#5b6470; --line:#e3e7ec; --soft:#f6f8fa;
+  --accent:#1b5fbf; --red:#c0392b; --redbg:#fdf2f0; --green:#1e7a4a; --greenbg:#f0f8f3;
+  --amber:#9a6a00; --amberbg:#fdf8ec; --shadow:0 1px 2px rgba(16,24,40,.06);
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+     font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ── липкая навигация ── */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;height:56px}
+.brand{font-weight:700;font-size:15px;letter-spacing:-.01em;white-space:nowrap}
+.brand span{color:var(--muted);font-weight:400}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;padding:6px 10px;border-radius:6px;font-size:13.5px;
+  color:var(--muted);text-decoration:none;white-space:nowrap}
+.nav a:hover{background:var(--soft);color:var(--fg)}
+.nav a.on{background:#eef4ff;color:var(--accent);font-weight:600}
+
+/* ── обложка ── */
+.hero{padding:60px 0 42px;border-bottom:1px solid var(--line)}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  font-weight:600;margin-bottom:14px}
+h1{font-size:clamp(30px,4.4vw,46px);line-height:1.14;letter-spacing:-.022em;margin:0 0 20px;font-weight:750}
+.lede{font-size:19px;color:#3c444e;max-width:70ch;margin:0}
+.lede strong{color:var(--fg)}
+
+h2{font-size:clamp(23px,2.6vw,30px);line-height:1.22;letter-spacing:-.018em;
+   margin:0 0 8px;font-weight:720}
+h3{font-size:18.5px;line-height:1.34;margin:30px 0 10px;font-weight:670;letter-spacing:-.01em}
+p{margin:0 0 15px;max-width:74ch}
+a{color:var(--accent)}
+
+/* ── секции ── */
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+.sec-no{font-family:var(--mono);font-size:12.5px;color:var(--muted);
+  letter-spacing:.06em;margin-bottom:10px;font-weight:600}
+.verdict{font-size:19.5px;line-height:1.45;font-weight:640;color:var(--fg);
+  margin:0 0 22px;max-width:66ch;letter-spacing:-.012em}
+
+/* ── плитки цифр ── */
+.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin:26px 0}
+.tile{border:1px solid var(--line);border-radius:11px;padding:17px 18px;background:var(--bg);
+  box-shadow:var(--shadow)}
+.tile .num{font-size:32px;font-weight:730;letter-spacing:-.03em;line-height:1.05;
+  font-variant-numeric:tabular-nums}
+.tile .cap{font-size:13.5px;color:var(--muted);margin-top:7px;line-height:1.42}
+.tile.bad .num{color:var(--red)} .tile.good .num{color:var(--green)}
+.tile.bad{background:var(--redbg);border-color:#f3dcd7} .tile.good{background:var(--greenbg);border-color:#d6ece0}
+
+/* ── врезки ── */
+.note{border-left:3px solid var(--line);background:var(--soft);padding:15px 18px;
+  border-radius:0 8px 8px 0;margin:22px 0;font-size:15.5px;max-width:74ch}
+.note>b:first-child{display:block;margin-bottom:3px}
+.note.warn{border-left-color:#e0b64a;background:var(--amberbg)}
+.note.stop{border-left-color:var(--red);background:var(--redbg)}
+.term{border:1px solid var(--line);border-left:3px solid var(--accent);background:#f7faff;
+  padding:16px 19px;border-radius:0 8px 8px 0;margin:22px 0;font-size:15.5px;max-width:74ch}
+.term .t{font-weight:680;font-size:14px;letter-spacing:.02em;color:var(--accent);
+  text-transform:uppercase;margin-bottom:8px}
+.term dt{font-weight:660;display:inline}
+.term dd{display:inline;margin:0}
+.term div+div{margin-top:7px}
+
+/* ── таблицы ── */
+.tw{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:10px;
+  background:
+    linear-gradient(to right,var(--bg) 30%,rgba(255,255,255,0)) left center,
+    linear-gradient(to left,var(--bg) 30%,rgba(255,255,255,0)) right center,
+    radial-gradient(farthest-side at 0 50%,rgba(16,24,40,.18),rgba(16,24,40,0)) left center,
+    radial-gradient(farthest-side at 100% 50%,rgba(16,24,40,.18),rgba(16,24,40,0)) right center;
+  background-repeat:no-repeat;background-size:34px 100%,34px 100%,14px 100%,14px 100%;
+  background-attachment:local,local,scroll,scroll}
+table{border-collapse:collapse;width:100%;font-size:14.8px;min-width:520px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:650;font-size:13px;letter-spacing:.02em;
+   color:#404952;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:hover{background:#fafbfc}
+.hl{background:var(--redbg)!important}
+
+/* ── источник цифры ── */
+.src{font-size:12.8px;color:var(--muted);font-style:normal;display:block;margin-top:3px}
+.srcline{font-size:13px;color:var(--muted);margin:-6px 0 20px;max-width:74ch}
+
+/* ── раскрытие ── */
+details{border:1px solid var(--line);border-radius:10px;margin:18px 0;background:var(--bg);
+  overflow:hidden}
+details[open]{box-shadow:var(--shadow)}
+summary{cursor:pointer;padding:13px 18px;font-weight:620;font-size:15.3px;list-style:none;
+  display:flex;align-items:center;gap:9px;user-select:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--muted);
+  border-bottom:2px solid var(--muted);transform:rotate(-45deg);transition:transform .18s;flex:0 0 auto}
+details[open] summary::before{transform:rotate(45deg)}
+summary:hover{background:var(--soft)}
+.dbody{padding:2px 18px 18px;border-top:1px solid var(--line)}
+.dbody>*:first-child{margin-top:14px}
+
+/* ── графика ── */
+figure{margin:26px 0;max-width:100%;overflow-x:auto;
+  background:
+    linear-gradient(to right,var(--bg) 30%,rgba(255,255,255,0)) left center,
+    linear-gradient(to left,var(--bg) 30%,rgba(255,255,255,0)) right center,
+    radial-gradient(farthest-side at 0 50%,rgba(16,24,40,.18),rgba(16,24,40,0)) left center,
+    radial-gradient(farthest-side at 100% 50%,rgba(16,24,40,.18),rgba(16,24,40,0)) right center;
+  background-repeat:no-repeat;background-size:34px 100%,34px 100%,14px 100%,14px 100%;
+  background-attachment:local,local,scroll,scroll}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font-size:13.4px;color:var(--muted);margin-top:11px;line-height:1.5}
+.svg-lbl{font:600 13px var(--sans);fill:var(--fg)}
+.svg-sub{font:400 12px var(--sans);fill:var(--muted)}
+.svg-num{font:700 14px var(--sans);fill:var(--fg);font-variant-numeric:tabular-nums}
+
+ul,ol{margin:0 0 15px;padding-left:22px;max-width:74ch}
+li{margin-bottom:7px}
+code{font-family:var(--mono);font-size:.9em;background:var(--soft);padding:1.5px 5px;
+  border-radius:4px;border:1px solid var(--line)}
+.foot{padding:40px 0 60px;color:var(--muted);font-size:14px}
+.foot p{max-width:74ch}
+
+@media (max-width:720px){
+  body{font-size:16px}
+  .nav{display:none}
+  section{padding:38px 0}
+  .hero{padding:38px 0 30px}
+  .tile .num{font-size:27px}
+  /* график не сжимаем до нечитаемого — пусть скроллится внутри figure */
+  figure svg{min-width:600px}
+  figcaption{position:sticky;left:0}
+}
+@media print{
+  .topbar{display:none}
+  details{border:none;box-shadow:none} details>summary{display:none}
+  .dbody{border:none;padding:0}
+  section{break-inside:avoid;border-bottom:1px solid #ddd}
+  figure,table,.note,.term{break-inside:avoid}
+  body{font-size:11pt} a{color:inherit;text-decoration:none}
+  figure svg{min-width:0} figure{background:none}
+}
+</style>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">SEO-аудит <span>· gorakailas.ru</span></div>
+    <nav class="nav">
+      <a href="#itog">Итог</a>
+      <a href="#zayavki">Счёт заявок</a>
+      <a href="#vydacha">Выдача</a>
+      <a href="#emkost">Ёмкость</a>
+      <a href="#indeks">Индекс</a>
+      <a href="#potolok">Потолок</a>
+      <a href="#smartfony">Смартфоны</a>
+      <a href="#reklama">Реклама сейчас</a>
+      <a href="#direkt">Цена рекламы</a>
+      <a href="#neyro">Нейроответ</a>
+      <a href="#tehnika">Техника</a>
+      <a href="#dalshe">Что дальше</a>
+      <a href="#granicy">Границы</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Аудит поисковой видимости · август 2026</div>
+    <h1>Сайт есть в индексе Яндекса<br>и почти не участвует в спросе</h1>
+    <p class="lede">960 страниц из 966 проиндексированы — <strong>99,4%</strong>. При этом
+    за квартал весь каталог показан в поиске <strong>6 312 раз</strong>, а по девяти
+    ключевым темам металлообработки сайта нет в топ-10 <strong>ни по одному запросу</strong>.
+    Проблема не в том, что страницы закрыты от поиска. Проблема в том, что они
+    не отвечают на то, что люди спрашивают.</p>
+  </div>
+</div>
+
+<section id="itog">
+  <div class="wrap">
+    <div class="sec-no">01 · ИТОГ</div>
+    <h2>Семь цифр, из которых состоит вывод</h2>
+    <p class="verdict">Каждая цифра ниже снята из ваших же кабинетов или из живой выдачи
+    Яндекса. Ни одна не является отраслевым средним или оценкой на глаз.</p>
+
+    <div class="tiles">
+      <div class="tile bad">
+        <div class="num">2</div>
+        <div class="cap">обращения за квартал показывают ваши цели в Метрике.
+        Автоматические цели за тот же период — <b>48</b></div>
+      </div>
+      <div class="tile bad">
+        <div class="num">0</div>
+        <div class="cap">вхождений сайта в топ-10 по <b>65 проверенным темам</b>.
+        В 24 выдачах, разобранных построчно, — 210 органических позиций,
+        ни одной вашей</div>
+      </div>
+      <div class="tile bad">
+        <div class="num">2,0</div>
+        <div class="cap">показа в месяц на страницу каталога — 6 312 показов
+        за квартал на 1 064 страницы</div>
+      </div>
+      <div class="tile bad">
+        <div class="num">8,1%</div>
+        <div class="cap">кликабельность сайта в выдаче: 415 кликов на 5 111 показов.
+        По <b>2 521 запросу из 2 833</b> сайт показывался и не получил ни одного клика —
+        это 78,3% всех показов</div>
+      </div>
+      <div class="tile">
+        <div class="num">1 078 337</div>
+        <div class="cap">кликов в месяц — ёмкость 93 тем, собранных от вашего
+        ассортимента. Профильность проверена выдачей у 82% этой величины:
+        подтверждено <b>652 598</b></div>
+      </div>
+      <div class="tile bad">
+        <div class="num">0,41%</div>
+        <div class="cap">конверсия со смартфонов против <b>2,01%</b> с компьютеров —
+        разрыв впятеро на уже пришедших</div>
+      </div>
+      <div class="tile bad">
+        <div class="num">0</div>
+        <div class="cap">отправок формы с рекламы за квартал при 199 визитах —
+        всё обращение с неё одно, клик по телефону. Роботность трафика 0%,
+        это живые люди</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>Что здесь считается обращением</b>
+      Отправка формы, клик по номеру телефона, клик по адресу почты, переход в мессенджер.
+      Продажа этим не измеряется: в вашей нише между обращением и договором проходят месяцы,
+      и аудит на такой срок не смотрит.
+    </div>
+
+    <h3>Как читать этот отчёт</h3>
+    <p>Каждый раздел устроен одинаково: сначала вывод одной фразой, под ним цифры,
+    на которых он стоит, и под каждой — источник и дата съёма. Технические подробности
+    и полные таблицы убраны под раскрывающиеся блоки — их можно не открывать,
+    не потеряв смысла.</p>
+    <p>Там, где данных не хватило, так и написано: «не измерено». Правдоподобной цифры
+    вместо снятой в этом отчёте нет нигде.</p>
+  </div>
+</section>
+
+<section id="zayavki">
+  <div class="wrap">
+    <div class="sec-no">02 · СЧЁТ ЗАЯВОК</div>
+    <h2>Заявки считаются счётчиком, который их не видит</h2>
+    <p class="verdict">За квартал ваши цели в Метрике показали 2 обращения.
+    Автоматические цели за тот же период и на тех же визитах — 48. Разрыв в 24 раза,
+    и он объясняется не трафиком, а настройкой.</p>
+
+    <figure>
+      <svg viewBox="0 0 720 190" role="img" aria-label="Сравнение: 2 обращения по ключевым целям против 48 по автоцелям">
+        <text x="0" y="16" class="svg-lbl">Ваши ключевые цели</text>
+        <rect x="0" y="26" width="26" height="34" rx="4" fill="#c0392b"/>
+        <text x="38" y="49" class="svg-num" fill="#c0392b">2</text>
+        <text x="60" y="49" class="svg-sub">обращения за квартал</text>
+
+        <text x="0" y="98" class="svg-lbl">Автоматические цели Метрики</text>
+        <rect x="0" y="108" width="624" height="34" rx="4" fill="#1b5fbf"/>
+        <text x="636" y="131" class="svg-num" fill="#1b5fbf">48</text>
+        <text x="0" y="172" class="svg-sub">Один и тот же сайт, один и тот же квартал, одни и те же 2 982 визита.</text>
+      </svg>
+      <figcaption>Яндекс Метрика, счётчик сайта, период 20.05–19.08.2026; снято 20.08.2026.</figcaption>
+    </figure>
+
+    <h3>Почему так вышло</h3>
+    <p>Три из четырёх ключевых целей настроены на контакты, которых на сайте
+    <b>физически нет</b>:</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Цель настроена на</th><th>Что на сайте на самом деле</th><th class="n">Достижений</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td>почта <code>info@gorakailas.ru</code></td><td>на страницах только <code>zakaz@gorakailas.ru</code></td><td class="n">0</td></tr>
+          <tr class="hl"><td>телефон 8 800 555-04-52</td><td>такого номера на сайте нет вовсе</td><td class="n">0</td></tr>
+          <tr class="hl"><td>телефон 8 800 302-33-78</td><td>есть только в закомментированном коде, пользователь его не видит</td><td class="n">0</td></tr>
+          <tr><td>форма «Подбор станка»</td><td>работает</td><td class="n">2</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Состав целей и достижения — Яндекс Метрика, квартал 20.05–19.08.2026;
+    наличие контактов проверено рендером живой страницы 20.08.2026.</p>
+
+    <p><b>Единственные два контакта, которые пользователь реально видит на сайте —
+    8 800 222-65-98 и zakaz@gorakailas.ru — не имеют именной цели ни один.</b></p>
+
+    <details>
+      <summary>Когда именно сломался счёт — восстановлено по помесячной динамике</summary>
+      <div class="dbody">
+        <p>Именная цель по почте и автоматическая цель «клик по email» совпадали
+        строка в строку семь месяцев подряд: 4/4, 11/11, 6/6, 4/4, 9/9, 4/4, 9/9.
+        В мае 2026 они разошлись, с июня именная цель даёт ноль при живой автоцели.</p>
+        <p>Так выглядит смена адреса почты на сайте без правки цели в Метрике.
+        Сама по себе смена адреса — нормальное событие; ненормально то, что цель
+        осталась на старом.</p>
+        <p class="srcline">Яндекс Метрика, помесячная динамика достижений целей
+        за всю жизнь счётчика; снято 20.08.2026.</p>
+      </div>
+    </details>
+
+    <div class="note stop">
+      <b>Что это значит для решений, которые уже приняты</b>
+      Любое решение по рекламе и продвижению за последний квартал принималось
+      по цифре, заниженной больше чем на порядок. Отдельно: автоматические стратегии
+      Яндекс Директа обучаются на целях. Стратегия, обученная на цели с нулём
+      достижений, обучиться не может — ей не на чем.
+    </div>
+
+    <div class="note warn">
+      <b>Оговорка, без которой цифра 48 будет прочитана неверно</b>
+      48 — это <b>верхняя граница</b>, а не число заявок. Автоцель считает клик
+      по ссылке: клик по адресу почты не доказывает отправленного письма.
+      Пересечения автоцелей между собой не разведены — один человек мог кликнуть
+      и по телефону, и по почте. Настоящее число лежит между 2 и 48, и после
+      починки целей оно станет измеримым.
+    </div>
+  </div>
+</section>
+
+<section id="vydacha">
+  <div class="wrap">
+    <div class="sec-no">03 · ВЫДАЧА</div>
+    <h2>По своему рынку сайта в выдаче нет нигде</h2>
+    <p class="verdict">Я снял живую выдачу Яндекса по 65 темам вашего ассортимента.
+    Сайта gorakailas.ru нет в топ-10 ни по одной из них.</p>
+
+    <p>По девяти ключевым темам металлообработки — тем, что несут 541 592 клика
+    в месяц, — выдача разобрана построчно. Адрес сайта не встречается <b>ни разу</b>:</p>
+
+    <div class="tiles">
+      <div class="tile bad"><div class="num">0 / 210</div><div class="cap">органических позиций топ-10 принадлежат вам</div></div>
+      <div class="tile bad"><div class="num">0 / 87</div><div class="cap">рекламных блоков в этих выдачах — ваши</div></div>
+      <div class="tile bad"><div class="num">0 / 59</div><div class="cap">спецблоков Яндекса ссылаются на вас</div></div>
+    </div>
+    <p class="srcline">Съём выдачи Яндекса по региону Москва, 24 запроса, 22.08.2026.
+    Ещё 41 тема проверена 18–20.08.2026 — результат тот же.</p>
+
+    <div class="note">
+      <b>Это самая прочная находка отчёта</b>
+      Здесь нет модели, допущений и споров о коэффициентах. Есть запрос, есть выдача,
+      есть поиск строки по её содержимому. Проверить это можно за минуту, набрав любой
+      из запросов в Яндексе.
+    </div>
+
+    <h3>Кто занимает места, на которые вы претендуете</h3>
+    <p>По родовым запросам вроде «токарный станок» или «фрезерный станок» топ держит
+    не отраслевой поставщик, а федеральная розница:</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Кто в топ-10</th><th class="n">По скольким темам из 26</th><th>Кто это</th></tr></thead>
+        <tbody>
+          <tr><td><b>vseinstrumenti.ru</b></td><td class="n">14</td><td>федеральная розница инструмента</td></tr>
+          <tr><td>avito.ru</td><td class="n">7</td><td>доска объявлений</td></tr>
+          <tr><td>lemanapro.ru</td><td class="n">6</td><td>сеть строительных гипермаркетов</td></tr>
+          <tr><td>kuvalda.ru</td><td class="n">6</td><td>розница инструмента</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Съём выдачи Яндекса по 26 темам категорий, регион Москва; 20.08.2026.</p>
+
+    <div class="note warn">
+      <b>Вывод из этого не «розницу не обогнать»</b>
+      Вывод в другом: <b>родовые запросы — не ваше поле боя</b>. Конкурировать
+      с федеральной розницей за слово «токарный станок» — это соревноваться в том,
+      где у неё ассортимент, отзывы и поведенческие факторы совсем другого порядка.
+      Ваше поле — то, где розницы нет: конкретные типы, задачи, параметры и модели.
+      Там же, по моему замеру, стоит и большая часть денежного спроса.
+    </div>
+
+    <details>
+      <summary>Что ещё показал разбор выдачи — материал для рекламы</summary>
+      <div class="dbody">
+        <p><b>Рекламная конкуренция устроена обратно спросу.</b> По дорогим родовым
+        запросам стоит потолок в 6 объявлений — место выкуплено. По узким профильным
+        запросам стоит одно-два объявления, а иногда ни одного.</p>
+        <p>Пример: тема «обрабатывающие центры» — 34 320 кликов в месяц; по уточнённому
+        запросу «вертикально фрезерный обрабатывающий центр» выдача профильна нацело,
+        а в рекламе <b>одно</b> объявление.</p>
+        <p>Это прямой материал для медиаплана: дорогие родовые забиты, узкие профильные
+        почти свободны.</p>
+        <p class="srcline">Съём выдачи Яндекса, 24 запроса, регион Москва; 22.08.2026.</p>
+      </div>
+    </details>
+
+    <div class="term">
+      <div class="t">Оговорка о регионе</div>
+      <div><dt>Что сделано. </dt><dd>Выдача снималась по Москве — как по региону
+      с максимальным спросом.</dd></div>
+      <div><dt>Что это значит. </dt><dd>Контрольный съём по Магнитогорску дал другую
+      картину: из девяти сайтов топа совпали три. Региональная выдача отличается
+      существенно.</dd></div>
+      <div><dt>Следствие. </dt><dd>Продвижение «на всю страну» и продвижение по городам
+      присутствия — это разная работа с разной ценой. Я разделяю их в предложении,
+      а не смешиваем.</dd></div>
+    </div>
+  </div>
+</section>
+
+<section id="emkost">
+  <div class="wrap">
+    <div class="sec-no">04 · ЁМКОСТЬ СПРОСА</div>
+    <h2>Рынок, на котором вы почти не присутствуете, — больше миллиона кликов в месяц</h2>
+    <p class="verdict">По 93 темам, собранным от вашего же ассортимента, ёмкость
+    ёмкость в России составляет 1 078 337 кликов в месяц. Профильность этой величины я проверил выдачей у 82% её объёма: подтверждено <b>652 598 кликов</b>, отвергнуто
+    227 000, хвост в 199 000 не проверялся.</p>
+
+    <div class="term">
+      <div class="t">Что такое ёмкость спроса и чем она не является</div>
+      <div><dt>Что это. </dt><dd>Сколько кликов в месяц получают <b>все сайты вместе</b>
+      по теме — то есть размер поля, а не ваша доля на нём.</dd></div>
+      <div><dt>Как считалось здесь. </dt><dd>Данные Яндекс Вебмастера о рынке,
+      среднемесячные значения по России. Из выборки вычтен опознанный чужой спрос —
+      ремонт, обучение, чужие отрасли.</dd></div>
+      <div><dt>Что двигает величину в обе стороны. </dt><dd>Вниз — непроверенная
+      профильность: у проверенных 82% чужим оказалось 227 000 кликов, и в хвосте
+      их может быть столько же. Вверх — усечённый хвост: данные о рынке доступны
+      не по всем запросам темы, и досъём хвоста в аудит не входил. Поэтому я не выдаю 1 078 337 ни за пол, ни за потолок: профильный рынок — порядка 650–800 тысяч
+      кликов в месяц.</dd></div>
+    </div>
+    <p class="srcline">Данные Яндекс Вебмастера о рынке, 93 темы, среднемесячные
+    значения по России; снято 21.08.2026.</p>
+
+    <h3>Насколько этот спрос действительно ваш</h3>
+    <p>Ёмкость сама по себе ничего не доказывает: под словом «станок» может прятаться
+    чужой рынок. Поэтому по девяти ключевым темам металлообработки я проверил
+    <b>саму выдачу</b> — кто стоит в топе и что там вообще продают.</p>
+
+    <figure>
+      <svg viewBox="0 0 720 132" role="img" aria-label="Из 541 592 кликов девяти ключевых тем профильными подтверждены 312 774, это 57,8 процента">
+        <text x="0" y="15" class="svg-lbl">541 592 клика в месяц — девять ключевых тем металлообработки</text>
+        <rect x="0" y="26" width="700" height="30" rx="4" fill="#e3e7ec"/>
+        <rect x="0" y="26" width="405" height="30" rx="4" fill="#1e7a4a"/>
+        <text x="12" y="46" class="svg-num" fill="#fff">312 774 — ваш профиль</text>
+        <text x="418" y="46" class="svg-sub">228 818 — чужое или смежное</text>
+        <text x="0" y="82" class="svg-lbl" fill="#1e7a4a">57,8%</text>
+        <text x="52" y="82" class="svg-sub">спроса подтверждено профильным — проверено выдачей по каждой теме</text>
+      </svg>
+      <figcaption>Съём выдачи Яндекса по девяти темам, регион Москва; 22.08.2026.
+      Величины тем — Яндекс Вебмастер, 21.08.2026.</figcaption>
+    </figure>
+
+    <div class="note stop">
+      <b>Чего я не измерил — и не буду изображать, что измерил</b>
+      <b>Какую долю этой ёмкости сайт забирает сегодня, я назвать не могу.</b>
+      Данные о вашем трафике и данные о рынке собраны разными инструментами
+      с разными единицами счёта, и пересечение между их выборками ничтожно: одни
+      и те же запросы почти не встречаются в обеих. Любая «доля рынка», посчитанная
+      делением одного на другое, была бы вымыслом с точностью до порядка.
+      <br><br>
+      Что вместо неё известно точно и снято изнутри вашего же кабинета: за квартал
+      сайт показан в поиске <b>6 312 раз</b> на 1 064 страницы, а кликабельность
+      составила <b>8,1%</b>: по 2 521 запросу из 2 833 не пришло ни одного клика. Разрыв между этой величиной и ёмкостью рынка виден
+      и без деления.
+    </div>
+
+    <details>
+      <summary>Что я делал, чтобы эта величина не оказалась завышенной</summary>
+      <div class="dbody">
+        <p>Принадлежность спроса определялась не по совпадению слова, а прямой проверкой
+        выдачи: кто реально стоит в топе по теме и что там продают.</p>
+        <p>Вычтен спрос, который словом похож на ваш, а рынком — чужой: ремонт
+        и обслуживание, обучение, а также категории, где в топе стоят общепит,
+        клиники и клининг.</p>
+        <p>По девяти ключевым темам проверка пошла построчно и срезала ещё
+        <b>227 000 кликов</b> как чужие. Непроверенным остался хвост в 199 000 —
+        в нём доля чужого, скорее всего, сопоставимая. Отдельно действует обратный
+        эффект: данные о рынке доступны не по всему хвосту запросов, и досъём в аудит
+        не входил. Эти два эффекта разнонаправленны, поэтому величину я не выдаю ни за пол, ни за потолок.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="indeks">
+  <div class="wrap">
+    <div class="sec-no">05 · ИНДЕКС И ВИДИМОСТЬ</div>
+    <h2>Страницы в поиске есть. Спроса на них нет</h2>
+    <p class="verdict">Это важно отделить: у сайта нет проблемы с индексацией.
+    960 страниц из 966 находятся в поиске Яндекса — 99,4%. Проблема начинается после
+    того, как страница попала в индекс. <span class="src">Замер сделан по карте сайта
+    от 13.08; к 23.08 каталог вырос до 1 064 адресов, и по 98 новым страницам данных об индексации у меня пока нет.</span></p>
+
+    <div class="tiles">
+      <div class="tile good"><div class="num">99,4%</div><div class="cap">страниц карты сайта в поиске — 960 из 966 на замере 20.08</div></div>
+      <div class="tile bad"><div class="num">6 312</div><div class="cap">показов в поиске за квартал на весь каталог</div></div>
+      <div class="tile bad"><div class="num">8,1%</div><div class="cap">кликабельность в выдаче: 415 кликов на 5 111 показов</div></div>
+    </div>
+    <p class="srcline">Сверка карты сайта со списком страниц в поиске — Яндекс Вебмастер,
+    20.08.2026. Показы — Яндекс Вебмастер, статистика поисковых запросов,
+    период 18.05–15.08.2026.</p>
+
+    <p>За квартал сайт получил <b>5 111 показов по 2 833 запросам</b> — столько отдаёт
+    статистика запросов Вебмастера. Полный трафик сайта за тот же период больше:
+    <b>6 312 показов</b> по тренду, разница приходится на хвост редких запросов, который
+    список не возвращает. Даже по большей из величин это <b>2,0 показа на страницу
+    в месяц</b>. Страница физически существует, робот её видит, в индексе она есть —
+    и за месяц её ссылка появляется в выдаче меньше двух раз.</p>
+
+    <h3>Где сайт стоит, когда его всё-таки показывают</h3>
+
+    <figure>
+      <svg viewBox="0 0 720 172" role="img" aria-label="86,1 процента показов приходятся на позиции 4-50, в топ-3 только 13,9 процента">
+        <text x="0" y="15" class="svg-lbl">Распределение показов по позициям</text>
+        <rect x="0" y="28" width="700" height="34" rx="4" fill="#e3e7ec"/>
+        <rect x="0" y="28" width="97" height="34" rx="4" fill="#1e7a4a"/>
+        <text x="8" y="50" class="svg-num" fill="#fff">13,9%</text>
+        <text x="112" y="50" class="svg-num" fill="#c0392b">86,1%</text>
+        <text x="176" y="50" class="svg-sub">показов — на позициях 4–50, где кликов почти нет</text>
+        <text x="0" y="82" class="svg-sub">топ-3</text>
+
+        <text x="0" y="118" class="svg-lbl">Ваша собственная кликабельность по позициям</text>
+        <rect x="0" y="130" width="150" height="22" rx="3" fill="#1e7a4a"/>
+        <text x="158" y="146" class="svg-num">44,69%</text>
+        <text x="225" y="146" class="svg-sub">позиция 1</text>
+        <rect x="330" y="130" width="72" height="22" rx="3" fill="#4a8fd6"/>
+        <text x="410" y="146" class="svg-num">21,51%</text>
+        <text x="477" y="146" class="svg-sub">позиции 2–3</text>
+        <rect x="580" y="130" width="20" height="22" rx="3" fill="#c0392b"/>
+        <text x="608" y="146" class="svg-num">5,89%</text>
+        <text x="663" y="146" class="svg-sub">4–10</text>
+      </svg>
+      <figcaption>Яндекс Вебмастер, статистика поисковых запросов, период 18.05–15.08.2026.
+      Кликабельность посчитана на собственных показах и кликах сайта, а не по отраслевой таблице.</figcaption>
+    </figure>
+
+    <p>Перевод показа из полосы 4–10 в полосу 2–3 умножает кликабельность
+    <b>в 3,65 раза</b>. Это и есть измеренный резерв по позициям — на собственных
+    числах сайта.</p>
+
+    <div class="note warn">
+      <b>И одновременно это объясняет, почему одних позиций не хватит</b>
+      Умножать 1,8 показа на страницу в месяц на любую кликабельность бессмысленно:
+      дефицит не в том, что по вам плохо кликают, а в том, что <b>показывать нечего</b>.
+      Сколько именно даёт работа с позициями — посчитано в следующем разделе.
+    </div>
+
+    <details>
+      <summary>Домашний регион: в Магнитогорске сайт невидим по товару</summary>
+      <div class="dbody">
+        <p>За квартал в Магнитогорске сайт получил <b>66 показов</b>, из них 89,4% —
+        по запросам с названием компании: «кайлас магнитогорск», «ооо кайлас».</p>
+        <p>По товарным запросам домашний регион дал <b>7 показов и 1 клик</b> за три месяца.</p>
+        <p>То есть в городе, где компания физически находится, поиск приводит только тех,
+        кто уже знает её имя.</p>
+        <p class="srcline">Яндекс Вебмастер, срез по региону Магнитогорск, период 18.05–15.08.2026.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Динамика: пик пройден весной, дальше спад</summary>
+      <div class="dbody">
+        <p>На горизонте 18 месяцев видно то, чего не показывает годовое окно: пик
+        пройден в <b>марте 2026 — 3 943 показа</b>, дальше непрерывный спад до
+        <b>1 635</b> за первые двадцать дней августа.</p>
+        <p>Синхронно ухудшается средняя позиция показа: <b>с 7,8 до 11,9</b>. Это
+        не колебание внутри одного состояния, а движение вниз по всем полосам позиций,
+        на которых построен расчёт в следующем разделе.</p>
+        <p>Причину я не устанавливаю: совпадения по времени есть, но совпадение
+        причиной не является.</p>
+        <p class="srcline">Яндекс Вебмастер, помесячная динамика за 18 месяцев, Россия;
+        снято 21.08.2026.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="potolok">
+  <div class="wrap">
+    <div class="sec-no">06 · ПОТОЛОК РОСТА</div>
+    <h2>Работа только с позициями упирается в плюс четыре обращения в месяц</h2>
+    <p class="verdict">Я посчитал, что даст рост позиций на текущем охвате — по вашим
+    собственным числам, а не по отраслевым таблицам. Ответ неприятный, и я привожу его первым, потому что он определяет всё предложение.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Сценарий</th><th class="n">Обращений за квартал</th><th>Что это значит</th></tr></thead>
+        <tbody>
+          <tr><td>Как сейчас</td><td class="n">11,8</td><td>обращения с поискового трафика за квартал: 415 кликов из выдачи при вашей же конверсии сайта</td></tr>
+          <tr><td>Четверть показов из полосы 4–10 переходит в 2–3</td><td class="n">+3,3</td><td>реалистичный результат квартала работ</td></tr>
+          <tr><td>Половина показов переходит в 2–3</td><td class="n">+6,5</td><td>хороший результат</td></tr>
+          <tr class="hl"><td><b>Все показы полосы 4–10 переходят в 2–3</b></td><td class="n"><b>+13,1</b></td><td>героический сценарий, +4,4 обращения в месяц</td></tr>
+          <tr class="hl"><td><b>Весь охват сайта стоит на позициях 2–3</b></td><td class="n"><b>31,3</b></td><td>абсолютный предел: рост в 2,65 раза от очень маленькой базы</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Расчёт на данных Яндекс Метрики и Вебмастера самого сайта,
+    20.08.2026. Цепочка: показы по полосам позиций → собственная кликабельность →
+    отношение клика к визиту → собственная конверсия в обращение.</p>
+
+    <div class="note stop">
+      <b>Вывод, который меняет состав работ</b>
+      Даже предельный, недостижимый на практике сценарий по позициям даёт около
+      четырёх дополнительных обращений в месяц. Причина не в кликабельности,
+      а в объёме: <b>охват сайта слишком мал, чтобы его умножение что-то решило.</b>
+      <br><br>
+      Поэтому основная работа — не «поднять то, что есть», а <b>создать то, чего нет</b>:
+      посадочные страницы под спрос, которого сайт сегодня не адресует. Резерв по охвату
+      на порядок больше резерва по позициям.
+    </div>
+
+    <div class="note warn">
+      <b>Границы этого расчёта</b>
+      Модель считает по среднему и не знает сезонности вашей ниши. Конверсия взята
+      фактическая — та, что сайт показывает сегодня; при исправлении дефектов
+      она изменится, и расчёт это не учитывает. Наконец, обращение здесь — не продажа:
+      связь с выручкой зависит от вашего цикла сделки, о котором у меня данных нет.
+    </div>
+  </div>
+</section>
+
+<section id="smartfony">
+  <div class="wrap">
+    <div class="sec-no">07 · СМАРТФОНЫ</div>
+    <h2>Половина работы не требует ни одного нового посетителя</h2>
+    <p class="verdict">Со смартфонов сайт конвертит в пять раз хуже, чем с компьютеров.
+    Выравнивание этой разницы на уже существующем трафике даёт почти столько же
+    обращений, сколько предельный сценарий по позициям, — и не зависит от Яндекса вовсе.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Устройство</th><th class="n">Визитов</th><th class="n">Форм</th><th class="n">Звонков</th><th class="n">Почта</th><th class="n">Мессенджер</th><th class="n">Обращений</th><th class="n">Конверсия</th></tr></thead>
+        <tbody>
+          <tr><td>Компьютеры</td><td class="n">2 238</td><td class="n">33</td><td class="n">3</td><td class="n">8</td><td class="n">1</td><td class="n"><b>45</b></td><td class="n"><b>2,01%</b></td></tr>
+          <tr class="hl"><td>Смартфоны</td><td class="n">730</td><td class="n"><b>0</b></td><td class="n">1</td><td class="n">2</td><td class="n">0</td><td class="n"><b>3</b></td><td class="n"><b>0,41%</b></td></tr>
+          <tr><td>Планшеты</td><td class="n">14</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Яндекс Метрика, счётчик сайта, разрез по типам устройств,
+    период 20.05–19.08.2026; снято 20.08.2026.</p>
+
+    <div class="note stop">
+      <b>Самая говорящая клетка этой таблицы — ноль</b>
+      За квартал с 730 мобильных визитов не отправлено <b>ни одной формы</b>.
+      Не «мало» — ноль. При этом со смартфонов кликают по телефону и по почте,
+      то есть люди доходят до контактов и хотят связаться. Форму они не отправляют.
+      <br><br>
+      Это не поведенческая особенность мобильных пользователей — это признак того,
+      что с формой на телефоне что-то не так, и её нужно проверить.
+    </div>
+
+    <p>Если довести мобильную конверсию до уровня компьютерной, тот же самый трафик
+    дал бы <b>+11,7 обращения за квартал</b>. Расчёт линейный и считает по среднему,
+    а равенство мобильной конверсии компьютерной — верхняя граница, а не ожидаемый
+    результат: это цель работ, и насколько она достижима, покажет замер после починки. Для сравнения: стопроцентный сценарий
+    по позициям из предыдущего раздела даёт +13,1. Две работы одного порядка,
+    но эта не требует ни нового трафика, ни времени на переиндексацию.</p>
+    <p class="srcline">Расчёт на данных Яндекс Метрики самого сайта, 20.08.2026.</p>
+  </div>
+</section>
+
+<section id="reklama">
+  <div class="wrap">
+    <div class="sec-no">08 · РЕКЛАМА СЕЙЧАС</div>
+    <h2>Реклама не приносит заявок и ведёт не туда, где ваш ассортимент</h2>
+    <p class="verdict">199 визитов с рекламы за квартал — 2,2 в день. Ноль отправок формы,
+    ноль кликов по почте, один клик по телефону.</p>
+
+    <div class="tiles">
+      <div class="tile bad"><div class="num">199</div><div class="cap">визитов с рекламы за квартал — 2,2 в день</div></div>
+      <div class="tile bad"><div class="num">0</div><div class="cap">отправок формы с рекламного трафика</div></div>
+      <div class="tile"><div class="num">0%</div><div class="cap">роботность рекламного трафика — это живые люди</div></div>
+    </div>
+    <p class="srcline">Яндекс Метрика, счётчик сайта, источники и роботность,
+    период 20.05–19.08.2026; снято 20.08.2026.</p>
+
+    <p>Списать это на накрутку нельзя: роботность рекламного трафика — <b>ноль</b>
+    и на компьютерах, и на смартфонах. Это живые люди, которые приходят и уходят,
+    не обратившись. 31 секунда на визите и глубина 1,20 страницы — худшие показатели
+    среди всех каналов сайта.</p>
+
+    <h3>Что именно рекламируется</h3>
+    <p>Устройство кампаний удалось прочитать по разметке в адресах посадочных страниц,
+    без доступа к рекламному кабинету. Три поисковые кампании, преимущественно
+    автотаргетинг. Вся тематика — <b>муфельные, закалочные и вакуумные печи плюс
+    экструзионно-выдувные машины</b>.</p>
+
+    <div class="note stop">
+      <b>Металлообработки в рекламе нет ни одной посадочной страницы</b>
+      При этом металлообработка — это 329 карточек товара из 528 на сайте
+      и почти весь измеренный нами профильный спрос. Направление, которое несёт
+      основную ёмкость рынка, рекламой не закрыто вовсе.
+    </div>
+    <p class="srcline">Разметка рекламных посадочных, Яндекс Метрика; снято 20.08.2026.
+    Состав каталога — сплошной обход 1 064 страниц сайта, 23.08.2026.</p>
+
+    <div class="note warn">
+      <b>Границы этого раздела</b>
+      Доступа к рекламному кабинету у меня нет — кампании ведутся на другом аккаунте.
+      Всё изложенное выше снято косвенно: из данных Метрики о рекламном трафике
+      и из разметки в адресах страниц. Расход, ставки, показы и отказанные площадки
+      мне не видны, и я их не оцениваю. Предложение по контекстной рекламе, когда
+      дойдёт до него очередь, будет строиться на собственном расчёте спроса,
+      а не на разборе текущих кампаний.
+    </div>
+  </div>
+</section>
+
+<section id="direkt">
+  <div class="wrap">
+    <div class="sec-no">09 · ЦЕНА РЕКЛАМЫ</div>
+    <h2>Реклама окупается или нет в зависимости от сайта, а не от рекламы</h2>
+    <p class="verdict">Я посчитал цену клика по вашим темам прогнозом Яндекса,
+    а конверсию взяли вашу фактическую. Получилось, что одна и та же закупка трафика
+    стоит вчетверо дороже или дешевле — и разницу создаёт не реклама, а состояние сайта.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Если конверсия сайта такая</th><th class="n">Цена одного обращения</th><th>Что это за конверсия</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td>0,50%</td><td class="n"><b>20 151 ₽</b></td><td>столько дала ваша сегодняшняя реклама: 199 визитов и <b>одно</b> обращение. По одному событию конверсию не считают — это рамка порядка, а не замер</td></tr>
+          <tr><td>0,52%</td><td class="n">19 400 ₽</td><td>рабочее допущение для холодного трафика: вдвое ниже вашей поисковой конверсии, потому что поисковый трафик почти целиком брендовый</td></tr>
+          <tr><td>1,04%</td><td class="n">9 688 ₽</td><td>конверсия поискового трафика того же сайта — из 498 визитов с известной фразой небрендовых <b>11</b></td></tr>
+          <tr><td>2,01%</td><td class="n"><b>5 013 ₽</b></td><td>конверсия трафика с компьютеров — верхняя оценка, для холодного рекламного трафика недостижимая: сюда входят прямые заходы и возвраты</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Цена клика — прогноз Яндекс Директа по России;
+    снято 23.08.2026. Конверсии — Яндекс Метрика, счётчик сайта, период 20.05–19.08.2026.</p>
+
+    <div class="note stop">
+      <b>Отсюда очерёдность работ, а не только их состав</b>
+      Запускать рекламу до починки конверсии — значит платить за обращение кратно
+      дороже. Насколько именно дешевле оно станет после правок, покажет замер: цена
+      обращения падает пропорционально росту конверсии, а на какую величину вырастет
+      конверсия — это цель работ, а не измеренный факт.
+      <br><br>
+      Вторая причина сегодняшней дороговизны лежит не в сайте: объявления ведут
+      на печи и выдувные машины, а металлообработки в посадочных нет ни одной
+      (раздел 08). Часть разницы объясняется тем, куда именно направлен трафик.
+      Поэтому реклама вынесена в <b>отдельное предложение</b> и по очерёдности идёт
+      после первоочередных правок, а не параллельно с ними.
+    </div>
+
+    <h3>Где родовое слово покупать нельзя</h3>
+    <p>Я сопоставил цену клика с долей профильного спроса, замеренной по выдаче.
+    Платить приходится за все клики темы, а целевыми оказывается только часть:</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Тема</th><th class="n">Клик стоит</th><th class="n">Профильных</th><th class="n">Целевой клик обходится в</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td>Сверлильные станки</td><td class="n">22,90 ₽</td><td class="n">17,1%</td><td class="n"><b>133,75 ₽</b></td></tr>
+          <tr class="hl"><td>Гидравлические прессы</td><td class="n">40,10 ₽</td><td class="n">15,7%</td><td class="n"><b>255,20 ₽</b></td></tr>
+          <tr class="hl"><td>Шлифовальные станки</td><td class="n">26,30 ₽</td><td class="n">17,2%</td><td class="n"><b>153,12 ₽</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><b>Дешёвый клик по этим темам — не выгода, а плата за чужую аудиторию:</b>
+    гараж, автосервис, деревообработку и розницу. Переплата — в 5,8–6,4 раза.</p>
+
+    <h3>Где покупать можно и нужно</h3>
+    <p>Три темы профильны нацело — по всем снятым срезам выдачи там стоят только
+    поставщики промышленного оборудования: <b>листогибочные прессы, обрабатывающие центры,
+    электроэрозионные станки</b>. Клик там дороже — от 63,50 до 210,30 ₽, — но каждый рубль
+    идёт в цель.</p>
+    <p class="srcline">Профильность — съём выдачи Яндекса по девяти темам, регион Москва,
+    22.08.2026. Цена клика — прогноз бюджета Яндекс Директа, Россия, 30 дней, 23.08.2026.</p>
+
+    <div class="note warn">
+      <b>Чего я не могу посчитать без вас</b>
+      Окупаемость зависит от среднего чека и от доли обращений, которые доходят до сделки.
+      Этих данных у меня нет. Поэтому считаем обратным ходом: при цене обращения 9 688 ₽
+      реклама выходит в ноль, если до сделки доходит каждое двадцатое обращение,
+      а маржа со сделки составляет 193 757 ₽; если доходит каждое десятое — достаточно
+      маржи 96 879 ₽.
+      <br><br>
+      Для оборудования с чеком в миллионы это выглядит достижимым, но <b>подтвердить
+      или опровергнуть это можете только вы</b> — по своим цифрам сделок.
+    </div>
+  </div>
+</section>
+
+<section id="neyro">
+  <div class="wrap">
+    <div class="sec-no">10 · НЕЙРООТВЕТ</div>
+    <h2>Яндекс уже цитирует ваш сайт — там, где не ставит его в топ</h2>
+    <p class="verdict">Единственное место, где сайт присутствует в выдаче по профильному
+    спросу, — источники нейроответа Яндекса. Это хорошая новость: она означает, что
+    контент признан годным, а не отвергнут.</p>
+
+    <div class="term">
+      <div class="t">Что такое нейроответ</div>
+      <div><dt>Что это. </dt><dd>Блок с готовым текстовым ответом над обычной выдачей,
+      собранный языковой моделью Яндекса из нескольких сайтов-источников; под ответом —
+      пронумерованный список этих источников.</dd></div>
+      <div><dt>Как выглядит здесь. </dt><dd>По запросу «резьбонакатной станок» ваша страница
+      стоит <b>8-м источником</b> нейроответа. В обычном топ-10 по тому же запросу
+      её нет ни на одной позиции.</dd></div>
+      <div><dt>Почему влияет на деньги. </dt><dd>Нейроответ занимает первый экран и забирает
+      часть кликов у органики. Попадание в его источники — единственный замеренный случай,
+      когда ваш сайт присутствует в выдаче по <b>родовым</b> запросам своего рынка:
+      в органическом топ-10 по 65 проверенным темам его нет ни разу. Фактическая же
+      видимость сайта сегодня держится на запросах по кодам моделей — на них приходится
+      <b>78% всех показов</b>.</dd></div>
+    </div>
+
+    <p>Я проверил 26 запросов. Нейроответ показывается в 24 из них — то есть это
+    не редкость, а норма выдачи в вашей нише. Ваш сайт попал в источники <b>4 раза</b>.</p>
+    <p class="srcline">Это контраст на выборке из 24 выдач, а не доля по всему спросу.</p>
+
+    <h3>От чего зависит попадание — и это управляемо</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Страницы</th><th class="n">Проверено запросов</th><th class="n">Попаданий в источники</th></tr></thead>
+        <tbody>
+          <tr><td>У страницы есть свой SEO-текст</td><td class="n">12</td><td class="n"><b>4</b></td></tr>
+          <tr class="hl"><td>Своего текста у страницы нет</td><td class="n">12</td><td class="n"><b>0</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Съём выдачи Яндекса, регион Москва; 22.08.2026.</p>
+
+    <div class="note">
+      <b>Что из этого следует практически</b>
+      Свой текст есть только у 60 категорий каталога из 316 — <b>у остальных 256 его нет</b>.
+      Там, где текста нет, попаданий в источники нейроответа <b>ноль из двенадцати</b>.
+      При этом объём текста решающим не оказался: важно наличие собственного описания,
+      а не его длина. Карточек товара это не касается — описание есть у всех 528.
+      <br><br>
+      Эта работа не требует ни ссылок, ни правок
+      движка — только текста на страницах, где его сегодня нет.
+    </div>
+  </div>
+</section>
+
+<section id="tehnika">
+  <div class="wrap">
+    <div class="sec-no">11 · ТЕХНИЧЕСКОЕ СОСТОЯНИЕ</div>
+    <h2>38 дефектов, из них 19 бьют по деньгам напрямую</h2>
+    <p class="verdict">Полный список с адресами страниц, объяснением и способом исправления
+    вынесен в отдельное приложение — он готов лечь в основу технического задания
+    разработчикам.</p>
+
+    <div class="tiles">
+      <div class="tile bad"><div class="num">19</div><div class="cap">дефектов бьют по деньгам — теряется спрос или заявки</div></div>
+      <div class="tile"><div class="num">16</div><div class="cap">мешают работе сайта или продвижению</div></div>
+      <div class="tile"><div class="num">3</div><div class="cap">косметические</div></div>
+    </div>
+
+    <p><a href="defekty.html"><b>Открыть приложение: все 38 дефектов →</b></a></p>
+
+    <h3>Семь, которые стоят дороже остальных</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Что не так</th><th>Насколько это распространено</th><th>Чем это оборачивается</th></tr></thead>
+        <tbody>
+          <tr class="hl">
+            <td><b>Товарный фид отдаёт ноль товаров</b></td>
+            <td>файл существует и собирается, категорий 106, товаров — 0</td>
+            <td>528 карточек не попадают в товарную выдачу Яндекса. Механизм при этом уже построен — это починка, а не разработка с нуля</td>
+          </tr>
+          <tr class="hl">
+            <td><b>Нет микроразметки товаров</b></td>
+            <td>0 блоков на 1 064 страницах</td>
+            <td>цена, наличие и характеристики не доходят до Яндекса вторым путём тоже — вместе с фидом это два закрытых канала из двух</td>
+          </tr>
+          <tr class="hl">
+            <td><b>Цена не попадает в текст страницы</b></td>
+            <td>подставляется скриптом уже в браузере</td>
+            <td>пользователь видит «880 000 ₽», поисковый робот — пустое место. В категориях вместо цены «Загрузка...»</td>
+          </tr>
+          <tr>
+            <td><b>Нет канонических адресов</b></td>
+            <td>0 из 1 064 страниц</td>
+            <td>параметризованные копии страниц ничем не склеены с оригиналом; Яндекс уже вычистил 41 такую копию сам, механизм их появления остался</td>
+          </tr>
+          <tr>
+            <td><b>Один адрес в двух написаниях</b></td>
+            <td>189 страниц каталога</td>
+            <td>известны роботу и со слешем, и без; сервер отвечает редиректом, но внутренние ссылки и карта сайта ведут на оба варианта</td>
+          </tr>
+          <tr>
+            <td><b>Нет страницы контактов</b></td>
+            <td>ни одной из 1 064; адреса <code>/kontakty/</code> и <code>/contacts/</code> отдают 404</td>
+            <td>контакты живут только в подвале. Для B2B-поставщика с представительствами в 20+ городах это прямая потеря доверия и спроса по запросам с городом</td>
+          </tr>
+          <tr>
+            <td><b>Служебное слово <code>None</code> в тексте карточек</b></td>
+            <td>159 карточек из 528 — почти треть каталога</td>
+            <td>техническая ошибка шаблона видна покупателю прямо в описании товара</td>
+          </tr>
+          <tr>
+            <td><b>Виджет подключён с демо-стенда поставщика</b></td>
+            <td>три скрипта грузятся с чужого демо-домена</td>
+            <td>работа продакшена зависит от стенда, который никто не обязан поддерживать. Отключат — сломается без предупреждения</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="srcline">Сплошной обход всех 1 064 страниц сайта 23.08.2026; товарный фид
+    и виджет проверены 20.08.2026; данные робота — Яндекс Вебмастер, 20.08.2026.</p>
+
+    <h3>Отдельно: главный довод компании не имеет страницы</h3>
+    <p>Кайлас позиционируется <b>прямыми контрактами с заводами Азии</b> — это первое,
+    что сообщает главная страница. Спрос ровно на это существует и измерен:
+    <b>6 093 клика в месяц</b> по теме «оборудование из Китая».</p>
+    <p>Страницы под него на сайте нет ни одной. Каталог разбит по типу техники
+    и не разбит по стране происхождения.</p>
+
+    <div class="note stop">
+      <b>Этот спрос уже забирает конкурент, и забирает структурой</b>
+      Сайт <code>stankoff.ru</code> держит раздел каталога «Страны изготовления → Китай»
+      и стоит по этому запросу в топ-10. Рядом — <code>impostrade.ru</code>
+      с прямым «Импорт станков Китай». То есть запрос коммерческий, его выигрывают
+      поставщики того же класса, что и вы, и выигрывают воспроизводимым способом —
+      разделом каталога, а не бюджетом.
+      <br><br>
+      Вас в этой выдаче нет.
+    </div>
+    <p class="srcline">Величина спроса — Яндекс Вебмастер, 21.08.2026.
+    Состав выдачи — съём 22.08.2026, регион Москва. Состав каталога — обход сайта 13.08.2026.</p>
+
+    <div class="note warn">
+      <b>Оговорка о величине</b>
+      Тема «оборудование из Китая» профильна вам <b>частично</b>: из восьми проверенных
+      сайтов топа профильных три, остальное разнородно. Значит забирается не весь объём
+      в 6 093 клика, а его часть. Точную долю я не измерял и не называю.
+    </div>
+  </div>
+</section>
+
+<section id="dalshe">
+  <div class="wrap">
+    <div class="sec-no">12 · ЧТО ИЗ ЭТОГО ЧИНИТСЯ БЫСТРО, А ЧТО ДОЛГО</div>
+    <h2>Две разные по природе работы</h2>
+    <p class="verdict">Разделение принципиальное: первая группа — исправление того,
+    что уже сломано. Вторая — создание того, чего нет. Первая опирается на ваших
+    разработчиков, вторая на замеренный спрос, и порядок между ними задан этим,
+    а не календарём.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Чинится то, что сломано</th><th>Создаётся то, чего нет</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Починить цели в Метрике, чтобы заявки вообще считались</td>
+            <td>Посадочные страницы под спрос, который сайт сегодня не адресует, — главный резерв</td>
+          </tr>
+          <tr>
+            <td>Проверить и исправить форму на смартфонах — сейчас с них ноль отправок</td>
+            <td>Собственные тексты категорий: сегодня они есть у 60 из 316</td>
+          </tr>
+          <tr>
+            <td>Наполнить товарный фид — механизм построен, товары в него не попадают</td>
+            <td>Раздел каталога по стране происхождения оборудования</td>
+          </tr>
+          <tr>
+            <td>Добавить микроразметку товаров</td>
+            <td>Работа с позициями по темам, где сайт уже показывается</td>
+          </tr>
+          <tr>
+            <td>Вывести цену в текст страницы, а не только в скрипт</td>
+            <td>Региональная видимость в городах присутствия — <b>за рамками
+            этого предложения</b>, отдельная работа с другим списком конкурентов</td>
+          </tr>
+          <tr>
+            <td>Канонические адреса и устранение дублей со слешем</td>
+            <td rowspan="3" style="vertical-align:middle;color:var(--muted)">Очерёдность этих работ — в предложении по поисковому продвижению. Контекстная реклама вынесена в отдельное предложение</td>
+          </tr>
+          <tr><td>Страница контактов</td></tr>
+          <tr><td>Убрать служебное <code>None</code> из 159 карточек и перевести виджет с демо-домена</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Почему вторая колонка — это отдельный объём, а не побочная работа</h3>
+    <p>Своего текста нет у <b>256 категорий каталога из 316</b>, и за десять дней августа
+    их стало на 45 больше. Все 256 входят в проект и заканчиваются вместе с ним —
+    это конечная работа с измеренным объёмом. В регулярное ведение уходит только текст
+    на страницы, которые появятся после.</p>
+
+    <div class="note">
+      <b>Отсюда единственный разумный ход — писать не всё, а под замеренный спрос</b>
+      Приоритетная порция — категории металлообработки: <b>50 из 256</b>. За ними стоит
+      наибольшая доля измеренной ёмкости, а объёма работ в них — <b>пятая часть</b>
+      полного наполнения категорий текстами.
+      <br><br>
+      То есть бо́льшая часть спроса закрывается меньшей частью работы. Остальное имеет смысл
+      делать после — и только если первая часть подтвердит расчёт фактом.
+    </div>
+
+    <p><a href="../kp-e8ea640afbc89d/2026-08-24/"><b>Открыть предложение по поисковому
+    продвижению: состав работ, объёмы и цена →</b></a></p>
+
+    <p class="srcline">Число страниц без своего текста — сплошной обход сайта, 23.08.2026.
+    Доля ёмкости — съём выдачи и данные Яндекс Вебмастера, 21–22.08.2026.
+    Очерёдность работ — в предложении по поисковому продвижению; контекстная реклама
+    считается отдельно и в этот комплект не входит.</p>
+
+    <div class="note">
+      <b>Почему порядок именно такой</b>
+      Первым идёт починка счёта заявок — не потому, что она самая денежная,
+      а потому, что без неё <b>эффект всех остальных работ невозможно измерить</b>.
+      Пока цели показывают 2 обращения вместо 48, любая оценка результата будет спором
+      о вкусах, а не разговором о цифрах.
+    </div>
+  </div>
+</section>
+
+<section id="granicy">
+  <div class="wrap">
+    <div class="sec-no">13 · ГРАНИЦЫ ЭТОГО АУДИТА</div>
+    <h2>Чего я не видел и о чём поэтому не сужу</h2>
+    <p class="verdict">Этот раздел существует затем, чтобы вы могли отличить измеренное
+    от неизмеренного, не разбираясь в методике.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Чего не видели</th><th>Почему</th><th>Что из-за этого не утверждаем</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Рекламный кабинет</td>
+            <td>кампании ведутся на другом аккаунте, доступа нет</td>
+            <td>расход, ставки, эффективность конкретных кампаний. Всё о рекламе снято косвенно — из Метрики и разметки адресов</td>
+          </tr>
+          <tr>
+            <td>Продажи, выручку, цикл сделки</td>
+            <td>эти данные живут вне сайта</td>
+            <td>связь обращений с деньгами. Я считаю обращения, а не договоры</td>
+          </tr>
+          <tr>
+            <td>Долю сайта в ёмкости рынка</td>
+            <td>данные о трафике и о рынке собраны разными инструментами с несопоставимыми единицами</td>
+            <td>любую цифру вида «вы забираете N% рынка». Она была бы вымыслом</td>
+          </tr>
+          <tr>
+            <td>Хвост редких запросов</td>
+            <td>инструмент отдаёт ограниченное число строк на тему, досъём в аудит не входил</td>
+            <td>что 1 078 337 кликов — профильная ёмкость целиком: выдачей проверено 82% величины, подтверждено 652 598</td>
+          </tr>
+          <tr>
+            <td>Выдачу по всем городам присутствия</td>
+            <td>основной съём — по Москве, контрольный — по Магнитогорску</td>
+            <td>что картина в остальных городах такая же. Контроль по крупнейшему запросу ядра показал: там топ совпал с московским лишь на треть</td>
+          </tr>
+          <tr>
+            <td>Ссылочный профиль сайта</td>
+            <td>разбор в объём этого аудита не входил</td>
+            <td>причины, связанные со ссылками. Я их не называю ни в одну сторону</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note warn">
+      <b>Что я сознательно вывел за рамки исследования</b>
+      Ремонт, техническое обслуживание и обучение исключены из всех расчётов спроса
+      целиком. Это отдельные рынки со своим языком запросов, и смешивать их
+      с продажей оборудования означало бы завысить ёмкость. Запчасти и оснастку я считаю отдельной линией, а не вместе со станками: чек различается
+      на три порядка.
+    </div>
+  </div>
+</section>
+
+<div class="foot">
+  <div class="wrap">
+    <p><b>О данных этого отчёта.</b> Использованы: Яндекс Метрика (счётчик сайта,
+    период 20.05–19.08.2026), Яндекс Вебмастер (данные за 18.05–15.08.2026),
+    Яндекс Вордстат, живая выдача Яндекса по регионам Москва и Магнитогорск,
+    а также сплошной обход сайта — 13.08 (966 страниц) и 23.08 (1 064 страницы).
+    Съём проводился 13–23 августа 2026 года.</p>
+    <p>Каждая цифра в отчёте прослеживается до конкретной выгрузки с датой съёма.
+    Источник и дату любой цифры назовём по запросу.</p>
+    <p>Всё, что посчитано, а не снято, помечено словом «расчёт» в подписи под цифрой
+    и сопровождается границами расчёта. Там, где величина неизвестна, так и написано —
+    «не измерено» или «я не называю». Правдоподобной цифры вместо снятой
+    в этом отчёте нет нигде.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var links = [].slice.call(document.querySelectorAll('.nav a'));
+  var secs  = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  function sync(){
+    var y = window.scrollY + 90, cur = 0;
+    for (var i = 0; i < secs.length; i++){ if (secs[i] && secs[i].offsetTop <= y) cur = i; }
+    links.forEach(function(a,i){ a.classList.toggle('on', i === cur); });
+  }
+  var t = false;
+  window.addEventListener('scroll', function(){
+    if (t) return; t = true;
+    requestAnimationFrame(function(){ sync(); t = false; });
+  }, {passive:true});
+  sync();
+
+  // В PDF должны попасть и свёрнутые обоснования: CSS закрытый <details> не раскрывает.
+  function razvernut(){
+    document.querySelectorAll('details').forEach(function(d){
+      if (!d.open){ d.dataset.byloZakryto = '1'; d.open = true; }
+    });
+  }
+  function vernut(){
+    document.querySelectorAll('details[data-bylo-zakryto]').forEach(function(d){
+      d.open = false; delete d.dataset.byloZakryto;
+    });
+  }
+  window.addEventListener('beforeprint', razvernut);
+  window.addEventListener('afterprint', vernut);
+  if (window.matchMedia){
+    var mq = window.matchMedia('print');
+    mq.addEventListener('change', function(e){ e.matches ? razvernut() : vernut(); });
+  }
+})();
+</script>
+
+<script>window.FB={doc:"otchet",title:"SEO-аудит gorakailas.ru — август 2026",endpoint:""};</script>
+<style>
+#fb, #fb *{box-sizing:border-box}
+#fb{--fb-ac:#1b5fbf;--fb-fg:#16191d;--fb-mu:#5b6470;--fb-ln:#e3e7ec;--fb-bg:#fff;
+    --fb-sf:#f6f8fa;--fb-gn:#1e7a4a;--fb-am:#9a6a00;--fb-rd:#c0392b;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif}
+
+/* ── кнопка вызова ── */
+#fb-fab{position:fixed;right:18px;bottom:18px;z-index:9000;display:flex;align-items:center;
+  gap:9px;padding:12px 17px;border:0;border-radius:999px;background:var(--fb-ac);color:#fff;
+  font:600 14.5px/1 inherit;cursor:pointer;box-shadow:0 4px 16px rgba(16,24,40,.22)}
+#fb-fab:hover{background:#17509f}
+#fb-fab b{display:inline-flex;min-width:21px;height:21px;padding:0 6px;align-items:center;
+  justify-content:center;border-radius:999px;background:rgba(255,255,255,.24);font-size:12.5px}
+#fb-fab[data-empty="1"] b{display:none}
+
+/* ── подсказка при первом заходе ── */
+#fb-hint{position:fixed;right:18px;bottom:74px;z-index:9000;max-width:290px;padding:13px 15px;
+  border-radius:12px;background:var(--fb-fg);color:#fff;font-size:13.5px;line-height:1.5;
+  box-shadow:0 6px 22px rgba(16,24,40,.3)}
+#fb-hint button{margin-top:9px;padding:5px 11px;border:0;border-radius:6px;
+  background:rgba(255,255,255,.18);color:#fff;font:600 12.5px inherit;cursor:pointer}
+
+/* ── всплывашка над выделением ── */
+#fb-tip{position:absolute;z-index:9100;display:none;padding:7px 13px;border:0;border-radius:8px;
+  background:var(--fb-fg);color:#fff;font:600 13px/1 inherit;cursor:pointer;
+  box-shadow:0 3px 12px rgba(16,24,40,.28);white-space:nowrap}
+
+/* ── панель ── */
+#fb-panel{position:fixed;top:0;right:0;bottom:0;width:min(430px,100vw);z-index:9200;
+  background:var(--fb-bg);border-left:1px solid var(--fb-ln);display:none;flex-direction:column;
+  box-shadow:-6px 0 26px rgba(16,24,40,.13)}
+#fb-panel.on{display:flex}
+#fb-hd{display:flex;align-items:center;gap:10px;padding:15px 17px;border-bottom:1px solid var(--fb-ln)}
+#fb-hd h3{margin:0;font:700 16px/1.3 inherit;color:var(--fb-fg);flex:1}
+#fb-hd button{border:0;background:none;font-size:23px;line-height:1;color:var(--fb-mu);cursor:pointer;padding:0 3px}
+#fb-sum{padding:13px 17px;border-bottom:1px solid var(--fb-ln);background:var(--fb-sf);
+  font-size:13.5px;color:var(--fb-mu);line-height:1.55}
+#fb-sum b{color:var(--fb-fg);font-variant-numeric:tabular-nums}
+#fb-list{flex:1;overflow-y:auto;padding:9px 13px}
+#fb-empty{padding:34px 20px;text-align:center;color:var(--fb-mu);font-size:14px;line-height:1.6}
+
+.fb-it{border:1px solid var(--fb-ln);border-radius:10px;padding:11px 13px;margin:9px 0;background:var(--fb-bg)}
+.fb-it .fb-w{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--fb-mu);margin-bottom:6px}
+.fb-it .fb-q{font-size:13px;color:var(--fb-mu);line-height:1.5;border-left:2px solid var(--fb-ln);
+  padding-left:9px;margin:0 0 7px}
+.fb-it .fb-t{font-size:14.5px;color:var(--fb-fg);line-height:1.55;margin:0;white-space:pre-wrap}
+.fb-it .fb-x{margin-top:8px;border:0;background:none;padding:0;color:var(--fb-rd);
+  font:600 12.5px inherit;cursor:pointer}
+.fb-it .fb-go{margin-top:8px;margin-right:13px;border:0;background:none;padding:0;
+  color:var(--fb-ac);font:600 12.5px inherit;cursor:pointer}
+.fb-it[data-v="berem"]{border-left:3px solid var(--fb-gn)}
+.fb-it[data-v="potom"]{border-left:3px solid var(--fb-am)}
+.fb-it[data-v="net"]{border-left:3px solid var(--fb-rd)}
+.fb-it[data-v="vopros"],.fb-it[data-v="zametka"]{border-left:3px solid var(--fb-ac)}
+
+#fb-ft{padding:13px;border-top:1px solid var(--fb-ln);display:grid;gap:8px}
+#fb-ft button{width:100%;padding:11px;border-radius:9px;border:1px solid var(--fb-ln);
+  background:var(--fb-bg);color:var(--fb-fg);font:600 14px inherit;cursor:pointer}
+#fb-ft button:hover{background:var(--fb-sf)}
+#fb-ft button.pri{background:var(--fb-ac);border-color:var(--fb-ac);color:#fff}
+#fb-ft button.pri:hover{background:#17509f}
+#fb-note{font-size:12px;color:var(--fb-mu);line-height:1.5;text-align:center;margin:0}
+
+/* ── кнопки решения в тексте КП ── */
+.fb-dec{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0 2px}
+.fb-dec button{padding:5px 12px;border:1px solid var(--fb-ln);border-radius:999px;
+  background:var(--fb-bg);color:var(--fb-mu);font:600 12.5px inherit;cursor:pointer;white-space:nowrap}
+.fb-dec button:hover{border-color:#c3cad4;color:var(--fb-fg)}
+.fb-dec button[aria-pressed="true"][data-v="berem"]{background:#eaf6ef;border-color:#bfe0cd;color:var(--fb-gn)}
+.fb-dec button[aria-pressed="true"][data-v="potom"]{background:#fdf6e8;border-color:#ecdcb4;color:var(--fb-am)}
+.fb-dec button[aria-pressed="true"][data-v="net"]{background:#fcefed;border-color:#f0cdc6;color:var(--fb-rd)}
+.fb-dec button[aria-pressed="true"][data-v="vopros"]{background:#eef4ff;border-color:#c6d9f5;color:var(--fb-ac)}
+
+/* значок заметки на полях блока */
+.fb-pin{position:absolute;left:-30px;top:2px;width:23px;height:23px;border:1px solid var(--fb-ln);
+  border-radius:7px;background:var(--fb-bg);color:var(--fb-mu);font:600 14px/1 inherit;cursor:pointer;
+  display:none;align-items:center;justify-content:center;padding:0}
+.fb-host{position:relative}
+.fb-host:hover .fb-pin{display:flex}
+.fb-pin:hover{border-color:var(--fb-ac);color:var(--fb-ac)}
+.fb-pin[data-has="1"]{display:flex;border-color:var(--fb-ac);color:var(--fb-ac);background:#eef4ff}
+@media(max-width:1280px){.fb-pin{left:auto;right:2px;top:-9px}}
+
+/* ── модальное окно ввода ── */
+#fb-mod{position:fixed;inset:0;z-index:9300;display:none;align-items:center;justify-content:center;
+  padding:16px;background:rgba(16,24,40,.42)}
+#fb-mod.on{display:flex}
+#fb-box{width:min(520px,100%);background:var(--fb-bg);border-radius:14px;padding:19px;
+  box-shadow:0 14px 44px rgba(16,24,40,.3)}
+#fb-box h4{margin:0 0 4px;font:700 16.5px/1.3 inherit;color:var(--fb-fg)}
+#fb-box .fb-q{font-size:13px;color:var(--fb-mu);line-height:1.5;border-left:2px solid var(--fb-ln);
+  padding-left:10px;margin:10px 0}
+#fb-txt{width:100%;min-height:112px;padding:11px;border:1px solid var(--fb-ln);border-radius:9px;
+  font:15px/1.55 inherit;color:var(--fb-fg);resize:vertical}
+#fb-txt:focus{outline:2px solid #c6d9f5;border-color:var(--fb-ac)}
+#fb-act{display:flex;gap:8px;margin-top:12px}
+#fb-act button{flex:1;padding:11px;border-radius:9px;border:1px solid var(--fb-ln);
+  background:var(--fb-bg);font:600 14px inherit;cursor:pointer;color:var(--fb-fg)}
+#fb-act button.pri{background:var(--fb-ac);border-color:var(--fb-ac);color:#fff}
+
+#fb-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:9400;
+  padding:11px 19px;border-radius:9px;background:var(--fb-fg);color:#fff;font-size:14px;
+  box-shadow:0 5px 18px rgba(16,24,40,.28);display:none}
+
+@media print{#fb{display:none!important}}
+
+/* Тач-устройства: :hover не срабатывает — значки на полях показываем всегда,
+   иначе на телефоне заметку можно поставить только выделением текста. */
+@media(hover:none){
+  .fb-pin{display:flex;opacity:.5}
+  .fb-pin[data-has="1"]{opacity:1}
+}
+
+@media(max-width:560px){
+  #fb-fab{right:12px;bottom:12px;padding:11px 15px;font-size:14px}
+  #fb-panel{width:100vw}
+  /* палец промахивается по кнопке в 25px — поднимаем до пригодного размера */
+  .fb-dec{gap:8px}
+  .fb-dec button{padding:9px 15px;font-size:13.5px}
+  .fb-pin{width:30px;height:30px;font-size:17px}
+  #fb-tip{padding:11px 17px;font-size:14.5px}
+}
+</style>
+
+<div id="fb">
+  <button id="fb-fab" data-empty="1" type="button">Заметки <b>0</b></button>
+  <div id="fb-tip" role="button">Заметка</div>
+  <aside id="fb-panel" aria-label="Заметки и решения">
+    <div id="fb-hd">
+      <h3>Ваши заметки</h3>
+      <button id="fb-close" type="button" aria-label="Закрыть">&times;</button>
+    </div>
+    <div id="fb-sum"></div>
+    <div id="fb-list"></div>
+    <div id="fb-ft">
+      <button class="pri" id="fb-send" type="button">Отправить</button>
+      <button id="fb-file" type="button">Скачать файлом</button>
+      <button id="fb-copy" type="button">Скопировать всё</button>
+      <p id="fb-note">Заметки хранятся в этом браузере. Отправьте их, когда закончите — иначе мы их не увидим.</p>
+    </div>
+  </aside>
+  <div id="fb-mod"><div id="fb-box">
+    <h4 id="fb-mt">Заметка</h4>
+    <div class="fb-q" id="fb-mq"></div>
+    <textarea id="fb-txt" placeholder="Что скажете по этому месту?"></textarea>
+    <div id="fb-act">
+      <button id="fb-cancel" type="button">Отмена</button>
+      <button class="pri" id="fb-save" type="button">Сохранить</button>
+    </div>
+  </div></div>
+  <div id="fb-toast"></div>
+</div>
+
+<script>
+(function(){
+"use strict";
+var CFG = window.FB || {};
+var DOC   = CFG.doc   || "doc";
+var TITLE = CFG.title || document.title || "Документ";
+var END   = CFG.endpoint || "";
+var KEY   = "kailas-fb:" + DOC;
+
+var LBL = {berem:"Берём", potom:"Потом", net:"Не надо", vopros:"Вопрос", zametka:"Заметка"};
+
+var items = [];
+try { items = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch(e){ items = []; }
+if (!Array.isArray(items)) items = [];
+
+var $ = function(id){ return document.getElementById(id); };
+var fab=$("fb-fab"), tip=$("fb-tip"), panel=$("fb-panel"), list=$("fb-list"),
+    sumEl=$("fb-sum"), mod=$("fb-mod"), txt=$("fb-txt"), mq=$("fb-mq"), mt=$("fb-mt"),
+    toastEl=$("fb-toast");
+
+function save(){
+  try { localStorage.setItem(KEY, JSON.stringify(items)); } catch(e){}
+  render();
+}
+function toast(m){
+  toastEl.textContent = m; toastEl.style.display = "block";
+  clearTimeout(toast._t); toast._t = setTimeout(function(){ toastEl.style.display="none"; }, 2600);
+}
+function nid(){ return "n" + (items.length ? (Math.max.apply(null, items.map(function(i){
+  return parseInt(String(i.id).slice(1),10) || 0; })) + 1) : 1); }
+
+// ── где мы находимся: номер и название раздела ──
+function whereOf(node){
+  var s = node && node.closest ? node.closest("section") : null;
+  if (!s) return {anchor:"", label:"Начало документа"};
+  var no = s.querySelector(".sec-no");
+  var h  = s.querySelector("h2");
+  var lb = (no ? no.textContent.trim() : "") || (h ? h.textContent.trim() : "") || (s.id || "");
+  return {anchor: s.id || "", label: lb.replace(/\s+/g," ")};
+}
+
+// ── ЗАМЕТКИ ПО ВЫДЕЛЕНИЮ ──
+var pending = null;
+
+function hideTip(){ tip.style.display = "none"; }
+
+function onSelect(){
+  var sel = window.getSelection();
+  if (!sel || sel.isCollapsed) { hideTip(); return; }
+  var q = String(sel).trim();
+  if (q.length < 3) { hideTip(); return; }
+  var r = sel.getRangeAt(0);
+  if (panel.contains(r.commonAncestorContainer) || mod.contains(r.commonAncestorContainer)) { hideTip(); return; }
+  var box = r.getBoundingClientRect();
+  if (!box.width && !box.height) { hideTip(); return; }
+  var node = r.commonAncestorContainer;
+  if (node.nodeType === 3) node = node.parentElement;
+  pending = {kind:"zametka", quote:q.slice(0,320), where:whereOf(node)};
+  tip.style.display = "block";
+  var tw = tip.offsetWidth || 96;
+  var left = box.left + window.scrollX + box.width/2 - tw/2;
+  left = Math.max(8, Math.min(left, document.documentElement.clientWidth - tw - 8));
+  var top = box.top + window.scrollY - tip.offsetHeight - 9;
+  if (top < window.scrollY + 4) top = box.bottom + window.scrollY + 9;
+  tip.style.left = left + "px"; tip.style.top = top + "px";
+}
+document.addEventListener("mouseup", function(){ setTimeout(onSelect, 10); });
+document.addEventListener("selectionchange", function(){
+  var s = window.getSelection(); if (!s || s.isCollapsed) hideTip();
+});
+document.addEventListener("touchend", function(){ setTimeout(onSelect, 260); });
+
+tip.addEventListener("click", function(){ hideTip(); openMod(pending); });
+
+// ── значки на полях крупных блоков ──
+function mountPins(){
+  var sel = "section .wrap > p, section .wrap > h3, .note, .tw, .tiles";
+  var blocks = document.querySelectorAll(sel);
+  Array.prototype.forEach.call(blocks, function(b, i){
+    if (b.closest("#fb")) return;
+    if (b.dataset.fbPin) return;
+    b.dataset.fbPin = DOC + "-b" + i;
+    b.classList.add("fb-host");
+    var btn = document.createElement("button");
+    btn.className = "fb-pin"; btn.type = "button"; btn.textContent = "+";
+    btn.title = "Заметка к этому месту";
+    btn.addEventListener("click", function(e){
+      e.stopPropagation();
+      var t = (b.textContent || "").trim().replace(/\s+/g," ");
+      openMod({kind:"zametka", quote:t.slice(0,220), where:whereOf(b), pin:b.dataset.fbPin});
+    });
+    b.appendChild(btn);
+  });
+  refreshPins();
+}
+function refreshPins(){
+  Array.prototype.forEach.call(document.querySelectorAll(".fb-pin"), function(p){
+    var host = p.parentElement;
+    var has = items.some(function(i){ return i.pin && i.pin === host.dataset.fbPin; });
+    p.dataset.has = has ? "1" : "0";
+  });
+}
+
+// ── РЕШЕНИЯ ПО СТРОКАМ СМЕТЫ (размечены data-fb-decide) ──
+function mountDecisions(){
+  var rows = document.querySelectorAll("[data-fb-decide]");
+  Array.prototype.forEach.call(rows, function(row){
+    if (row.dataset.fbReady) return;
+    row.dataset.fbReady = "1";
+    var name  = row.getAttribute("data-fb-decide");
+    var hours = parseFloat(String(row.getAttribute("data-fb-hours")||"").replace(",",".")) || 0;
+    var sum   = parseFloat(row.getAttribute("data-fb-sum") || "0") || 0;
+    var box = document.createElement("div");
+    box.className = "fb-dec";
+    ["berem","potom","net","vopros"].forEach(function(v){
+      var b = document.createElement("button");
+      b.type = "button"; b.dataset.v = v; b.textContent = LBL[v];
+      b.setAttribute("aria-pressed","false");
+      b.addEventListener("click", function(){
+        var cur = items.filter(function(i){ return i.row === name; })[0];
+        if (cur && cur.verdict === v && v !== "vopros"){       // повторный клик снимает
+          items = items.filter(function(i){ return i !== cur; }); save(); return;
+        }
+        if (v === "vopros"){
+          openMod({kind:"vopros", row:name, quote:name, where:whereOf(row), hours:hours, sum:sum});
+          return;
+        }
+        if (cur){ cur.verdict = v; cur.text = ""; cur.ts = Date.now(); }
+        else items.push({id:nid(), kind:"reshenie", verdict:v, row:name, hours:hours, sum:sum,
+                         where:whereOf(row), text:"", ts:Date.now()});
+        save();
+      });
+      box.appendChild(b);
+    });
+    var host = row.tagName === "TR" ? row.querySelector("td") : row;
+    (host || row).appendChild(box);
+  });
+  refreshDecisions();
+}
+function refreshDecisions(){
+  Array.prototype.forEach.call(document.querySelectorAll("[data-fb-decide]"), function(row){
+    var name = row.getAttribute("data-fb-decide");
+    var cur  = items.filter(function(i){ return i.row === name; })[0];
+    Array.prototype.forEach.call(row.querySelectorAll(".fb-dec button"), function(b){
+      b.setAttribute("aria-pressed", (cur && cur.verdict === b.dataset.v) ? "true" : "false");
+    });
+  });
+}
+
+// ── МОДАЛЬНОЕ ОКНО ──
+var draft = null;
+function openMod(d){
+  if (!d) return;
+  draft = d;
+  mt.textContent = d.kind === "vopros" ? ("Вопрос по строке: " + (d.row||"")) : "Заметка";
+  mq.textContent = d.quote || "";
+  mq.style.display = d.quote ? "block" : "none";
+  txt.placeholder = d.kind === "vopros" ? "Что уточнить по этой строке?" : "Что скажете по этому месту?";
+  var ex = items.filter(function(i){
+    return (d.pin && i.pin === d.pin) || (d.row && i.row === d.row); })[0];
+  txt.value = ex ? (ex.text || "") : "";
+  mod.classList.add("on");
+  setTimeout(function(){ txt.focus(); }, 40);
+}
+function closeMod(){ mod.classList.remove("on"); draft = null; }
+$("fb-cancel").addEventListener("click", closeMod);
+mod.addEventListener("click", function(e){ if (e.target === mod) closeMod(); });
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape"){ closeMod(); panel.classList.remove("on"); hideTip(); }
+});
+
+$("fb-save").addEventListener("click", function(){
+  var t = txt.value.trim();
+  if (!t && draft && draft.kind !== "vopros"){ toast("Пустая заметка не сохранена"); closeMod(); return; }
+  if (!draft) { closeMod(); return; }
+  var ex = items.filter(function(i){
+    return (draft.pin && i.pin === draft.pin) || (draft.row && i.row === draft.row); })[0];
+  if (ex){
+    ex.text = t; ex.ts = Date.now();
+    if (draft.kind === "vopros") ex.verdict = "vopros";
+    if (!t && draft.kind === "vopros") items = items.filter(function(i){ return i !== ex; });
+  } else {
+    items.push({id:nid(),
+      kind: draft.kind === "vopros" ? "reshenie" : "zametka",
+      verdict: draft.kind === "vopros" ? "vopros" : "zametka",
+      row: draft.row || "", pin: draft.pin || "",
+      hours: draft.hours || 0, sum: draft.sum || 0,
+      quote: draft.quote || "", where: draft.where || {anchor:"",label:""},
+      text: t, ts: Date.now()});
+  }
+  save(); closeMod();
+  toast("Сохранено. Не забудьте отправить в конце");
+  window.getSelection && window.getSelection().removeAllRanges();
+});
+
+// ── ПАНЕЛЬ ──
+fab.addEventListener("click", function(){ panel.classList.toggle("on"); dropHint(); });
+$("fb-close").addEventListener("click", function(){ panel.classList.remove("on"); });
+
+function money(n){ return n.toLocaleString("ru-RU"); }
+function hrs(n){ return String(n).replace(".", ","); }
+
+function render(){
+  fab.querySelector("b").textContent = items.length;
+  fab.dataset.empty = items.length ? "0" : "1";
+
+  // счётчик выбранного объёма — только если в документе есть строки сметы
+  var hasRows = !!document.querySelector("[data-fb-decide]");
+  if (hasRows){
+    var take = items.filter(function(i){ return i.verdict === "berem"; });
+    var h = take.reduce(function(a,i){ return a + (i.hours||0); }, 0);
+    var s = take.reduce(function(a,i){ return a + (i.sum||0); }, 0);
+    var q = items.filter(function(i){ return i.verdict === "vopros"; }).length;
+    var n = items.filter(function(i){ return i.verdict === "net"; }).length;
+    sumEl.style.display = "block";
+    sumEl.innerHTML = take.length
+      ? ("Выбрано работ: <b>" + take.length + "</b> · <b>" + hrs(Math.round(h*10)/10) +
+         "</b> ч · <b>" + money(s) + " ₽</b>" +
+         (q ? "<br>Вопросов: <b>" + q + "</b>" : "") + (n ? " · снято: <b>" + n + "</b>" : "") +
+         "<br><span style='font-size:12.5px'>Это ваш выбор, а не новая цена — итог мы подтвердим письмом.</span>")
+      : "Отметьте строки в разделах «Разовый проект» и «Цена» — здесь появится ваш выбор в часах и рублях.";
+  } else {
+    sumEl.style.display = "none";
+  }
+
+  if (!items.length){
+    list.innerHTML = '<div id="fb-empty">Пока пусто.<br><br>Выделите любой текст — появится кнопка «Заметка».' +
+      (hasRows ? '<br>По строкам работ есть кнопки «Берём / Потом / Не надо / Вопрос».' : '') + '</div>';
+  } else {
+    var srt = items.slice().sort(function(a,b){ return a.ts - b.ts; });
+    list.innerHTML = "";
+    srt.forEach(function(i){
+      var d = document.createElement("div");
+      d.className = "fb-it"; d.dataset.v = i.verdict || "zametka";
+      var w = (LBL[i.verdict] || "Заметка") + (i.where && i.where.label ? " · " + i.where.label : "");
+      var html = '<div class="fb-w">' + esc(w) + "</div>";
+      if (i.row)   html += '<div class="fb-q">' + esc(i.row) + "</div>";
+      else if (i.quote) html += '<div class="fb-q">' + esc(i.quote) + "</div>";
+      if (i.text)  html += '<p class="fb-t">' + esc(i.text) + "</p>";
+      html += '<button class="fb-go" type="button">Показать в тексте</button>' +
+              '<button class="fb-x" type="button">Удалить</button>';
+      d.innerHTML = html;
+      d.querySelector(".fb-x").addEventListener("click", function(){
+        items = items.filter(function(x){ return x.id !== i.id; }); save();
+      });
+      d.querySelector(".fb-go").addEventListener("click", function(){
+        var t = i.where && i.where.anchor ? document.getElementById(i.where.anchor) : null;
+        if (t){ panel.classList.remove("on"); t.scrollIntoView({behavior:"smooth", block:"start"}); }
+        else toast("Это место в начале документа");
+      });
+      list.appendChild(d);
+    });
+  }
+  refreshPins(); refreshDecisions();
+}
+function esc(s){
+  return String(s).replace(/[&<>"]/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; });
+}
+
+// ── ВЫГРУЗКА ──
+function asText(){
+  var L = [];
+  L.push(TITLE);
+  L.push("Заметки и решения клиента");
+  L.push("Записей: " + items.length);
+  L.push("Дата: " + new Date().toLocaleString("ru-RU"));
+  L.push("");
+  var take = items.filter(function(i){ return i.verdict === "berem"; });
+  if (take.length){
+    var h = take.reduce(function(a,i){ return a + (i.hours||0); }, 0);
+    var s = take.reduce(function(a,i){ return a + (i.sum||0); }, 0);
+    L.push("ВЫБРАНО РАБОТ: " + take.length + " · " + hrs(Math.round(h*10)/10) + " ч · " + money(s) + " руб.");
+    L.push("");
+  }
+  items.slice().sort(function(a,b){ return a.ts - b.ts; }).forEach(function(i, n){
+    L.push("--- " + (n+1) + ". " + (LBL[i.verdict] || "Заметка") +
+           (i.where && i.where.label ? "  [" + i.where.label + "]" : ""));
+    if (i.row) L.push("Строка: " + i.row);
+    else if (i.quote) L.push("Место: «" + i.quote + "»");
+    if (i.text) L.push("Комментарий: " + i.text);
+    L.push("");
+  });
+  return L.join("\n");
+}
+function payload(){
+  return {doc:DOC, title:TITLE, url:location.href, at:new Date().toISOString(),
+          count:items.length, items:items, text:asText()};
+}
+
+$("fb-copy").addEventListener("click", function(){
+  if (!items.length){ toast("Пока нечего копировать"); return; }
+  var t = asText();
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t).then(function(){ toast("Скопировано — вставьте в сообщение"); },
+                                          function(){ fallbackCopy(t); });
+  } else fallbackCopy(t);
+});
+function fallbackCopy(t){
+  var a = document.createElement("textarea");
+  a.value = t; a.style.position = "fixed"; a.style.opacity = "0";
+  document.body.appendChild(a); a.select();
+  try { document.execCommand("copy"); toast("Скопировано — вставьте в сообщение"); }
+  catch(e){ toast("Скопировать не вышло — сохраните файлом"); }
+  document.body.removeChild(a);
+}
+
+$("fb-file").addEventListener("click", function(){
+  if (!items.length){ toast("Пока нечего сохранять"); return; }
+  var blob = new Blob([asText()], {type:"text/plain;charset=utf-8"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "zametki-" + DOC + "-" + new Date().toISOString().slice(0,10) + ".txt";
+  document.body.appendChild(a); a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); document.body.removeChild(a); }, 400);
+  toast("Файл сохранён — пришлите его нам");
+});
+
+var sendBtn = $("fb-send");
+if (!END){ sendBtn.style.display = "none"; }
+sendBtn.addEventListener("click", function(){
+  if (!items.length){ toast("Пока нечего отправлять"); return; }
+  sendBtn.disabled = true; sendBtn.textContent = "Отправляем…";
+  fetch(END, {method:"POST", headers:{"Content-Type":"application/json"},
+              body: JSON.stringify(payload())})
+    .then(function(r){
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      sendBtn.textContent = "Отправлено ✓";
+      toast("Отправлено. Мы всё получили — спасибо");
+      setTimeout(function(){ sendBtn.disabled = false; sendBtn.textContent = "Отправить"; }, 4000);
+    })
+    .catch(function(){
+      sendBtn.disabled = false; sendBtn.textContent = "Отправить";
+      toast("Не отправилось. Сохраните файлом и пришлите нам");
+    });
+});
+
+// ── подсказка при первом заходе ──
+function dropHint(){
+  var h = $("fb-hint"); if (h) h.remove();
+  try { localStorage.setItem(KEY + ":hint", "1"); } catch(e){}
+}
+function showHint(){
+  var seen = "1";
+  try { seen = localStorage.getItem(KEY + ":hint"); } catch(e){}
+  if (seen || items.length) return;
+  var h = document.createElement("div");
+  h.id = "fb-hint";
+  h.innerHTML = "Выделите любой текст — можно оставить заметку или вопрос прямо здесь. " +
+    "Мы их получим вместе с ответом.<br><button type='button'>Понятно</button>";
+  h.querySelector("button").addEventListener("click", dropHint);
+  $("fb").appendChild(h);
+  setTimeout(function(){ var e = $("fb-hint"); if (e) e.remove(); }, 14000);
+}
+
+mountPins(); mountDecisions(); render();
+setTimeout(showHint, 2200);
+})();
+</script>
+
+</body>
+</html>
